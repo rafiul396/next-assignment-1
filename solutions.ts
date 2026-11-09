@@ -130,7 +130,7 @@ const validateAgeAsync = async (age: number): Promise<string> => {
     });
 
   } catch (error) {
-    return (error as Error).message;
+    throw error;
   }
 };
 
