@@ -12,7 +12,7 @@ const multiplyValue = (value: number, multiplier?: number): number => {
 
 const processInput = (value: string | number | boolean): string | number => {
   if (typeof value === "string") {
-    return value.trim().toLowerCase();
+    return value.trim().toLowerCase().replace(/\s+/g, "");
   }
 
   if (typeof value === "number") {
