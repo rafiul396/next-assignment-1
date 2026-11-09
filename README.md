@@ -18,3 +18,6 @@ This assignment has 8 small problems that practice core TypeScript skills. Each 
 | 8 | `validateAgeAsync` | Async functions, `Promise<string>`, rejecting with `Error` |
 
 ## Blog Link
+
+Blog-1 : https://github.com/rafiul396/next-assignment-1/blob/main/[blog-name-1].md
+Blog-2 : https://github.com/rafiul396/next-assignment-1/blob/main/[blog-name-2].md
