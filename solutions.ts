@@ -1,5 +1,3 @@
-// Problem 1:
-
 const multiplyValue = (value: number, multiplier?: number): number => {
   if (multiplier === undefined) {
     return value * 2;
@@ -8,7 +6,6 @@ const multiplyValue = (value: number, multiplier?: number): number => {
   return value * multiplier;
 };
 
-// Problem 2:
 
 const processInput = (value: string | number | boolean): string | number => {
   if (typeof value === "string") {
@@ -26,7 +23,6 @@ const processInput = (value: string | number | boolean): string | number => {
   return "Inactive";
 };
 
-// Problem 3:
 
 const formatCoordinate = (coordinate: readonly [number, number, string]): string => {
   const latitude = coordinate[0];
@@ -36,7 +32,6 @@ const formatCoordinate = (coordinate: readonly [number, number, string]): string
   return "Location: " + locationName + " (" + latitude + ", " + longitude + ")";
 };
 
-// Problem 4:
 
 const concatenateArrays = <T,>(...arrays: T[][]): T[] => {
   const result: T[] = [];
@@ -50,7 +45,6 @@ const concatenateArrays = <T,>(...arrays: T[][]): T[] => {
   return result;
 };
 
-// Problem 5:
 
 interface Course {
   title: string;
@@ -64,14 +58,6 @@ function getPopularCourses(courses: Course[], minStudents: number): Course[] {
   );
 }
 
-const courses: Course[] = [
-  { title: "TypeScript Mastery", students: 120, isPublished: true },
-  { title: "Draft Course", students: 200, isPublished: false },
-  { title: "Basic HTML", students: 45, isPublished: true },
-  { title: "Next.js Pro", students: 85, isPublished: true }
-];
-
-// Problem 6:
 
 function pluckValues<T, K extends keyof T>(
   items: T[],
@@ -86,7 +72,6 @@ function pluckValues<T, K extends keyof T>(
   return result;
 }
 
-// Problem 7:
 
 class Employee {
     protected name: string;
@@ -115,7 +100,6 @@ class Manager extends Employee {
   }
 }
 
-// Problem 8:
 
 const validateAgeAsync = async (age: number): Promise<string> => {
   try {
